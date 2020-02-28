@@ -1,0 +1,25 @@
+* {
+    font-family: 'Special Elite';
+}
+
+.travelTrivia {
+    font-size: 60px;
+}
+
+.quiz,
+.summary {
+    display: none;
+}
+
+.quiz ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz li {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: lightsteelblue;
+}
