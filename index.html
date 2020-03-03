@@ -20,28 +20,41 @@
 
 <body>
 
-    <div class="container justify-content-center p-5">
-        <p class="travelTrivia">Travel Trivia</p>
-        <row class="start">
-            <h2 class="tagline">Let's test your worldly knowledge!</h2>
-            <a href="#">Begin!</a>
+    <div class="container-flex justify-content-center pt-3">
+        <p class="travelTrivia text-center">Travel Trivia</p>
+        <row class=" start">
+            <div class="row d-flex justify-content-center pb-3">
+                <img class="image-holder mt-3 mb-5" src="./assets/images/welcomepage.jpg" alt="map"></img>
+            </div>
+            <h3 class="tagline text-center">Test your worldly knowledge</h3>
+            <h3 class="tagline text-center">with these 10 questions!</h3>
+            <br>
+            <a class="d-flex justify-content-center" href="#">Begin!</a>
         </row>
 
-        <row class="quiz">
-            <h2>Question Title</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <a href="#">Submit Answer</a>
+        <row class="quiz text-center">
+            <p class="questionCount">Question Number</p>
+            <div class="row d-flex justify-content-center">
+                <div class="image-holder mb-3"></div>
+            </div>
+            <p class="timeRemaining mt-2 mb-3">You have <span class="timer">0</span> seconds remaining</p>
+            <h3>Question Title</h3>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="d-flex justify-content-center" href="#">Submit Answer</a>
         </row>
 
-        <row class="summary">
-            <h2>Summary Screen</h2>
-            <p>Your score will show here</p>
-            <a href="#">Restart Quiz</a>
+        <row class="summary text-center">
+            <h3>Your score will show here</h3>
+            <a class="d-flex justify-content-center" href="#">Restart Quiz</a>
         </row>
 
 

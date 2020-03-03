@@ -1,9 +1,11 @@
 * {
     font-family: 'Special Elite';
+    font-size: 20px;
 }
 
 .travelTrivia {
-    font-size: 60px;
+    font-size: 50px;
+    margin-bottom: 0 !important;
 }
 
 .quiz,
@@ -11,9 +13,15 @@
     display: none;
 }
 
+.image-holder {
+    width: 475px;
+    height: relative;
+}
+
 .quiz ul {
     list-style: none;
     padding: 0;
+    width: 350px;
 }
 
 .quiz li {
