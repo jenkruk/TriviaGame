@@ -85,18 +85,10 @@ var questions = [{
 
 $(document).ready(function () {
 
-    /* *******************************************  TIMER ************************************************************** */
+    /* *******************************************  TIMER ************************************************************** 
 
     $(function () {
-        function countDown() {
-            var id = setTimeout(countDown, 1000);
-            $(".timer").html(time);
-            if (time === 0) {
-                clearTimeout(id);
-                /* $('.showAnswer').show(); */
-            }
-            time--;
-        }
+        
         countDown();
     });
 
@@ -129,6 +121,7 @@ $(document).ready(function () {
         } else {
             alert('Please select an answer');
         }
+        time = 30;
     });
 
     /* RESTART QUIZ (SHOWS ON SUMMARY PAGE) */
@@ -140,11 +133,21 @@ $(document).ready(function () {
 
 /* FUNCTIONS */
 
+function countDown() {
+    var id = setTimeout(countDown, 1000);
+    $(".timer").html(time);
+    if (time === 0) {
+        clearTimeout(id);
+    }
+    time--;
+}
+
 function showQuestion() {
     var question = questions[currentQuestion];
     $('.quiz .questionCount').text("Question " + (currentQuestion + 1) + " out of " + questions.length);
     $('.quiz h3').text(question.title);
     $('.quiz ul').html('');
+    $('.image-holder').empty();
     $('.image-holder').append('<img class=image-holder src="' + questions[currentQuestion].image + ' ">');
     for (var i = 0; i < question.answers.length; i++) {
         $('.quiz ul').append(`<li id="${i}">${question.answers[i]}</li>`);
@@ -164,10 +167,10 @@ function checkAnswer(guess) {
     }
 }
 
-/* function answerPage() {
-    $('.image-holder').append('<img class=image-holder src="' + questions[currentQuestion].image + ' ">') {
-        
-    };
+/* function showAnswer() {
+    $('.start').hide();
+    $('.quiz').hide();
+    $('.summary').hide();
     $('.image-holder').append('<img class=image-holder src="' + questions[currentQuestion].solved + ' ">');
 } */
 

@@ -9,7 +9,8 @@
 }
 
 .quiz,
-.summary {
+.summary,
+.answer {
     display: none;
 }
 
