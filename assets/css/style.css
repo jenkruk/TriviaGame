@@ -1,34 +1,118 @@
 * {
-    font-family: 'Special Elite';
+    font-family: 'Special Elite' !important;
     font-size: 20px;
 }
 
 .travelTrivia {
     font-size: 50px;
-    margin-bottom: 0 !important;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.quiz,
-.summary,
-.answer {
-    display: none;
+/* game intro */
+.start-button {
+    display: block;
+    margin-top: 20%;
 }
 
-.image-holder {
-    width: 475px;
+/* game content */
+
+.coverImageHolder {
+    width: 650px;
     height: relative;
 }
 
-.quiz ul {
-    list-style: none;
-    padding: 0;
-    width: 350px;
+.imageHolder {
+    width: 465px;
+    height: relative;
 }
 
-.quiz li {
+.questionTitle {
+    margin: 0 auto;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#4682B4, #eee);
+    padding: 10px;
+    width: 465px;
+}
+
+.selector {
+    margin: 0 auto;
     cursor: pointer;
+    width: 250px;
 }
 
-.selected {
-    background-color: lightsteelblue;
+.selector:hover {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.selector:active {
+    font-size: 20px;
+    color: #007bff;
+}
+
+img {
+    width: 475px;
+    height: relative;
+    margin: auto;
+}
+
+/* game summary */
+.results li {
+    padding: 5px;
+}
+
+/* Media Queries***************************************************************************************************
+
+/* 980px max-width media query  */
+/*
+@media screen and (max-width: 980px) {
+    .container {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+
+/* 768px max-width media query  */
+/* Media Queries***************************************************************************************************
+@media screen and (max-width: 768px) {
+    .travelTrivia {
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        background: -webkit-linear-gradient(#eee, #4682B4);
+        padding: 10px;
+    }
+
+    .container {
+        font-size: 1.3rem;
+        background: -webkit-linear-gradient(#eee, blue);
+        padding: 20px 0 768px 0;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #adjust-img {
+        width: 50%;
+        height: auto;
+    }
 }
