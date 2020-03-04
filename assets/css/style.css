@@ -6,7 +6,6 @@
 .travelTrivia {
     font-size: 50px;
     text-align: center;
-    margin-top: 40px;
 }
 
 /* game intro */
@@ -25,12 +24,15 @@
 .imageHolder {
     width: 465px;
     height: relative;
+    border-style: inset;
+    border-width: thick;
+    border-color: lightsteelblue;
 }
 
 .questionTitle {
     margin: 0 auto;
     font-weight: bold;
-    background: -webkit-linear-gradient(#4682B4, #eee);
+    background: -webkit-linear-gradient(lightsteelblue, #eee);
     padding: 10px;
     width: 465px;
 }

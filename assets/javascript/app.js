@@ -21,7 +21,7 @@ var questions = [
     'Where is the Eiffel Tower?',
     "Where is this Great Wall?",
     'Where is the Taj Mahal?',
-    'Where is the Grand Canyon'
+    'Where is the Grand Canyon?'
 ];
 
 var answerOptions = [
@@ -117,13 +117,13 @@ $(document).ready(function () {
 function showGameContent() {
     showImage = "<img class='imageHolder mb-4 mx-auto d-block' src='" + unsolvedImages[questionNumber] + "'>";
     //Prints question to the DOM dynamically
-    var questionSelected = "<p class='questionTitle'>" + questions[questionNumber] + "</p><br>";
+    var questionSelected = "<p class='questionTitle mb-3'>" + questions[questionNumber] + "</p>";
     //For loop that shows the available answer options for the particular question
     var answerOptionsSelected = answerOptions[questionNumber];
     var showOptions = '';
     var i;
     for (i = 0; i < answerOptionsSelected.length; i++) {
-        showOptions += '<div class="selector">' + answerOptionsSelected[i] + '</div>';
+        showOptions += '<div class="selector mt-1">' + answerOptionsSelected[i] + '</div>';
     }
     //Hides welcome page image and text
     $('.coverImageHolder').hide();
@@ -235,13 +235,13 @@ function gameSummary() {
     var mainImage = "./assets/images/main.png";
     //If statement to congratulate the player and show their percentage score if they scored better than or equal to 70%
     if (score >= 70) {
-        message = "<p class='text-center mt-3'>Well Done!<br>You scored " + score + "%</p>";
+        message = "<p class='text-center mt-3'>Well Done!<br><br>You scored " + score + "%</p>";
         //Shows mainImage in the DOM
-        showImage = "<img class='imageHolder mx-auto d-block' src='" + mainImage + "'>";
+        showImage = "<img class='coverImageHolder mx-auto d-block' src='" + mainImage + "'>";
     } else { //Else statement to wish the player better luck next time and to show them their percentage score
-        message = "<p class='text-center mt-3'>Better luck next time! <br> You scored " + score + "%</p>";
+        message = "<p class='text-center mt-3'>Better luck next time!<br><br>You scored " + score + "%</p>";
         //Shows mainImage in the DOM
-        showImage = "<img class='imageHolder mx-auto d-block' id='ajdust-img' src='" + mainImage + "'>";
+        showImage = "<img class='coverImageHolder mx-auto d-block' id='ajdust-img' src='" + mainImage + "'>";
     }
     //These bottom three variables generate the score tracking
     var correctCount = trackRight + ' Right';
