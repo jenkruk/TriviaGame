@@ -1,7 +1,7 @@
 // This variable stores the data shown in the .quiz div
 var showQuiz;
 
-var startButton = '<button type="button" class="btn btn-primary btn-md mt-3 start-button">Start</button>';
+var startButton = '<button type="button" class="btn btn-primary btn-md mt-3 startButton">Start</button>';
 
 var tryAgainBtn = '<button type="button" class="btn btn-primary btn-md mt-3 tryAgainBtn">Try Again</button>';
 
@@ -80,7 +80,7 @@ $(document).ready(function () {
     gameIntro(); //calls (invokes) the function 
 
     //This event listener starts the game when the user clicks on the start button
-    $("body").on("click", ".start-button", function (event) {
+    $("body").on("click", ".startButton", function (event) {
         event.preventDefault();
         //This function displays game content
         showGameContent();

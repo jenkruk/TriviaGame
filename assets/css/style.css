@@ -20,7 +20,7 @@
 }
 
 .imageHolder {
-    width: 100%;
+    width: 465px;
     height: relative;
     border-style: inset;
     border-width: thick;
@@ -62,7 +62,7 @@ img {
     padding: 5px;
 }
 
-/* media queries */
+/******************************** media query **************************************/
 @media (max-width: 640px) {
 
     .container {
@@ -75,6 +75,10 @@ img {
 
     .tagline {
         font-size: 0.75rem;
+    }
+
+    .imageHolder {
+        width: 75%;
     }
 
     .questionTitle {
