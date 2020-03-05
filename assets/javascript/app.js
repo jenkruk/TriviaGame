@@ -21,7 +21,7 @@ var questions = [
     'Where is the Eiffel Tower?',
     "Where is this Great Wall?",
     'Where is the Taj Mahal?',
-    'Where is the Grand Canyon?'
+    'Where is the Great Barrier Reef?'
 ];
 
 var answerOptions = [
@@ -29,16 +29,16 @@ var answerOptions = [
     ['Italy', 'France', 'Japan', 'Argentina'],
     ['Morocco', 'Chile', 'Peru', 'China'],
     ['India', 'Bangladesh', 'Philippines', 'Vietnam'],
-    ['Nevada', 'Utah', 'Arizona', 'Maine']
+    ['Mexico', 'Haiti', 'Australia', 'Belize']
 ];
 
-var correctAnswers = ['Egypt', 'France', 'China', 'India', 'Arizona'];
+var correctAnswers = ['Egypt', 'France', 'China', 'India', 'Australia'];
 
 var showCorrectAnswer;
 
-var unsolvedImages = ["./assets/images/giza.jpg", "./assets/images/eiffel.jpg", "./assets/images/wall.jpg", "./assets/images/tajMahal.jpg", "./assets/images/canyon.jpg"];
+var unsolvedImages = ["./assets/images/giza.jpg", "./assets/images/eiffel.jpg", "./assets/images/wall.jpg", "./assets/images/tajMahal.jpg", "./assets/images/reef.jpg"];
 
-var solvedImages = ["./assets/images/solved/gizaSolved.jpg", "./assets/images/solved/eiffelSolved.jpg", "./assets/images/solved/wallSolved.jpg", "./assets/images/solved/tajMahalSolved.jpg", "./assets/images/solved/canyonSolved.jpg"];
+var solvedImages = ["./assets/images/solved/gizaSolved.jpg", "./assets/images/solved/eiffelSolved.jpg", "./assets/images/solved/wallSolved.jpg", "./assets/images/solved/tajMahalSolved.jpg", "./assets/images/solved/reefSolved.jpg"];
 
 var showImage;
 
