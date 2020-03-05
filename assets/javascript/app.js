@@ -86,6 +86,8 @@ $(document).ready(function () {
         showGameContent();
         //This function starts the timer
         countDown();
+        //Plays sound affect
+        click.play();
     });
 
     //This event listener adds functionality to the answer options
@@ -110,6 +112,8 @@ $(document).ready(function () {
     //This event listener assigns the resetGame function to the on-click of the Try Again Button
     $("body").on("click", ".tryAgainBtn", function (event) {
         resetGame();
+        //Plays sound affect
+        click.play();
     });
 }); // End of ready() function
 
@@ -148,6 +152,8 @@ function showMissed() {
     showQuiz = showImage + message + showCorrectAnswer;
     //Shows the quiz in the html where the class .quiz has been defined
     $(".quiz").html(showQuiz);
+    //Plays sound affect
+    stamp.play();
     //Reveals this result page for 3 seconds before moving to the next question or the summary page
     goToNext();
 }
@@ -166,6 +172,8 @@ function showWrong() {
     showQuiz = showImage + message + showCorrectAnswer;
     //Shows the quiz in the html where the class .quiz has been defined
     $(".quiz").html(showQuiz);
+    //Plays sound affect
+    stamp.play();
     //Reveals this result page for 3 seconds before moving to the next question or the summary page
     goToNext();
 }
@@ -182,6 +190,8 @@ function showRight() {
     showQuiz = showImage + message;
     //Shows the quiz in the html where the class .quiz has been defined
     $(".quiz").html(showQuiz);
+    //Plays sound affect
+    stamp.play();
     //Reveals this result page for 3 seconds before moving to the next question or the summary page
     goToNext();
 }
@@ -238,10 +248,14 @@ function gameSummary() {
         message = "<p class='text-center mt-3'>Well Done!<br><br>You scored " + score + "%</p>";
         //Shows mainImage in the DOM
         showImage = "<img class='coverImageHolder mx-auto d-block' src='" + mainImage + "'>";
+        //plays sound effect
+        won.play();
     } else { //Else statement to wish the player better luck next time and to show them their percentage score
         message = "<p class='text-center mt-3'>Better luck next time!<br><br>You scored " + score + "%</p>";
         //Shows mainImage in the DOM
         showImage = "<img class='coverImageHolder mx-auto d-block' id='ajdust-img' src='" + mainImage + "'>";
+        //plays sound effect
+        lost.play();
     }
     //These bottom three variables generate the score tracking
     var correctCount = trackRight + ' Right';
