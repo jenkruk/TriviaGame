@@ -24,19 +24,35 @@
     <audio src="./assets/sound/gameOver.mp3" id="lost" crossOrigin="anonymous"></audio>
     <audio src="./assets/sound/victory.mp3" id="won" crossOrigin="anonymous"></audio>
 
-    <div class="container"></div>
-    <header>
-        <h1 class="travelTrivia pt-3">Travel Trivia</h1>
-    </header>
-    <div class="row d-flex justify-content-center">
-        <img class="coverImageHolder" src="./assets/images/main.png">
+    <div class="container">
+        <header class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <h1 class="travelTrivia text-center pt-3">Travel Trivia</h1>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <img class="coverImageHolder" src="./assets/images/main.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <p class="tagline text-center mt-4">Test your worldly knowledge</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <p class="tagline text-center">with these 5 questions!</p>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="quiz text-center col-sm col-md-12"></div>
+        </div>
     </div>
-    <h3 class="tagline text-center mt-4">Test your worldly knowledge</h3>
-    <h3 class="tagline text-center">with these 5 questions!</h3>
-    <div class="row text-center">
-        <div class="quiz col-md-12"></div>
-    </div>
-    </div>
+
     <!-- Link to jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Link to Javascript -->
